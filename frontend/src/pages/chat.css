@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+#chatbotcontainer {
+   background:linear-gradient(45deg, #030f17e5, #1f0114ec);
+   box-shadow: 0 0 10px 0 rgba(76, 230, 19, 0.933);
+   border-radius: 10px;
+}
+
+#chathead
+{
+font-size: 35px;
+padding: 5px;
+font-weight: 700;
+font-family: "Kanit", Serif;
+text-align: center;
+background:linear-gradient(45deg, #82001c, #8c22a7eb);
+color: white;
+text-shadow: 0 0 10px rgba(20, 72, 176, 0.933);
+box-shadow: 0 0 10px 0 rgb(255, 97, 197);
+}
+
+#chatmsg
+{
+   font-weight: 600;
+   font-size: 14px;
+}

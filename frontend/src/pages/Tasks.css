@@ -1,0 +1,59 @@
+/* Input Field */
+.search-input {
+    width: 100%;
+    padding: 14px 24px;
+    border-radius: 50px;
+    border: 2px solid transparent;
+    background: linear-gradient(45deg, rgb(50, 96, 94) 0%, rgb(82, 60, 106) 100%);
+    background-clip: padding-box;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    outline: none;
+    transition: all 0.3s ease;
+    box-shadow: 0px 0 8px rgba(106, 54, 116, 0.828);
+}
+
+/* Input Focus Effect */
+.search-input:focus {
+    border: 2px solid #ff61a6;
+    box-shadow: 0px 4px 15px rgba(255, 97, 166, 0.5);
+    background: rgba(0, 0, 0, 0.1);
+}
+
+/* Placeholder Text Styling */
+.search-input::placeholder {
+    color: #dcdcdc;
+    opacity: 1;
+    font-style: italic;
+}
+
+/* Hover Effects */
+.search-input:hover {
+    background: linear-gradient(45deg, rgb(47, 41, 62) 0%, rgb(58, 32, 63) 100%);
+    
+}
+
+/* Adding Icon inside the Input */
+.search-input-wrapper {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.search-input-wrapper .search-input {
+    padding-left: 40px; /* Space for the icon */
+}
+
+.search-input-wrapper .search-icon {
+    position: absolute;
+    left: 15px;
+    color: #ff61a6;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+/* Hover Icon Effects */
+.search-input-wrapper .search-input:focus + .search-icon {
+    color: #ff61a6;
+}

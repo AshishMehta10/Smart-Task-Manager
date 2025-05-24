@@ -1,0 +1,9 @@
+
+
+#mainDiv
+{
+    background:linear-gradient(45deg,#0d0b1c69, #071214ca),url('./assets/images/taskBG.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}

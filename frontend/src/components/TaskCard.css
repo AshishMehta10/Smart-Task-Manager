@@ -1,0 +1,128 @@
+/* Global Styling */
+body {
+    background-color: #121212;
+    color: #e0e0e0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.taskCard {
+    background: #1e1e1e;
+    border-radius: 12px;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0px 0px 8px rgba(208, 72, 229, 0.673);
+}
+
+.taskCard:hover {
+    transform: translateY(-8px);
+    box-shadow: 0px 8px 24px rgba(255, 255, 255, 0.2);
+}
+
+.priority-card {
+    background: linear-gradient(45deg, #1f3048, #264d31);
+    padding: 10px 20px;
+    border-radius: 12px;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.priority-card:hover {
+    transform: scale(1.05);
+}
+
+.task-card-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.task-card-title:hover {
+    color: #ff61a6;
+    cursor: pointer;
+}
+
+.card-section {
+    margin-top: 10px;
+    padding: 15px;
+    border-radius: 12px;
+    background-color: #2a2a2a;
+    transition: background-color 0.3s ease;
+}
+
+.card-section:hover {
+    background-color: #353535;
+}
+
+.add-subtask-btn {
+    background: linear-gradient(45deg, #409d79, #307386);
+    padding: 12px 16px;
+    color: #fff;
+    width: 100%;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+}
+
+.add-subtask-btn:hover {
+    background: linear-gradient(45deg, #ff3f00, #ff61a6);
+}
+
+.icon-info {
+    font-size: 18px;
+    color: #bbb;
+    transition: color 0.3s ease;
+}
+
+.icon-info:hover {
+    color: #ff61a6;
+}
+
+.subtask-card {
+    background-color: #333;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(255, 255, 255, 0.1);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.subtask-card:hover {
+    background-color: #444;
+    transform: scale(1.02);
+}
+
+.activity-counter {
+    color: #ff61a6;
+    font-weight: 600;
+}
+
+.user-avatar {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    border: 2px solid #ff61a6;
+    margin-right: 5px;
+    box-shadow: 0 2px 12px rgba(255, 255, 255, 0.1);
+}
+
+/* Icons and button styles */
+button:disabled {
+    background: #444;
+    color: #aaa;
+    cursor: not-allowed;
+}
+
+button:enabled {
+    cursor: pointer;
+}
