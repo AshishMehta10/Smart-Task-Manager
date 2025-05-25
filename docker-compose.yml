@@ -1,0 +1,31 @@
+version: '3.8'
+
+services:
+  mongo:
+    image: mongo
+    container_name: mongo
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo-data:/data/db
+
+  backend:
+    build: ./server
+    container_name: backend
+    ports:
+      - "8000:8000"  # Host:Container
+    depends_on:
+      - mongo
+
+  frontend:
+    build: ./client
+    container_name: frontend
+    ports:
+      - "3000:3000"  # Host:Container
+    depends_on:
+      - backend
+    environment:
+      - VITE_API_URL=http://localhost:8000  # Optional if frontend needs backend
+
+volumes:
+  mongo-data:
